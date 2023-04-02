@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Przelicznik walut</title>
+  <link href="style.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+
+<body class="body">
+  <div class="container">
+  <form class="js-form form">
+    <fieldset class="form__fieldset">
+      <legend class="form__legend"> <strong>Przelicznik walut</strong></legend>
+    <p>
+      <label>
+        <span class="form__labelText">
+          Kwota w zł*:
+        </span>
+        <input class="form__field js-amount" placeholder="Wpisz kwotę w zł"  class="js-amount" name="amount" required type="number" step="0.01" min="0.01">
+      </label>
+      </p>
+      <p>
+        <label>
+          <span class="form__labelText">
+            Wybierz walutę:
+          </span>
+          <select  class="form__field js-currency" name="currency">
+        <option value="USD">Dolar Amerykański</option>
+        <option value="EUR">Euro</option>
+        <option value="CHF">Frank szwajcarski</option>
+      </select>
+        </label>
+      </fieldset>
+      <p>
+        <button class="form__button">Przelicz!</button>
+      </p>
+  <p class="form__info"> Kursy pochodzą ze strony <strong>walutomat.pl</strong> na dzień 24.03.2023 r.</p>
+  <p class="js-result form__result"></p>
+</form>
+</div>
+</body>
+
+</html>
