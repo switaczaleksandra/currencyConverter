@@ -15,11 +15,11 @@
                 return  amount / rateCHF;
         }
     };
+
 const updateResultText = (amount, result, currency) => {
     const resultElement = document.querySelector(".js-result");
     resultElement.innerHTML = `Wynik: ${amount.toFixed(2)} PLN = <strong>${result.toFixed(2)} ${currency}</strong>`;
 };
-
 
     const onFormSubmit = (event) => {
         event.preventDefault();
