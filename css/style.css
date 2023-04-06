@@ -34,8 +34,8 @@ html {
 
 .form__legend {
     color: rgb(88, 14, 70);
-    margin: 5px;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 5px;
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
